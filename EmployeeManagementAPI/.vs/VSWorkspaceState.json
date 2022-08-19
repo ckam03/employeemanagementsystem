@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\EmployeeManagementAPI",
+    "\\EmployeeManagementAPI\\Controllers",
+    "\\EmployeeManagementAPI\\Data",
+    "\\EmployeeManagementAPI\\Dtos",
+    "\\EmployeeManagementAPI\\Models",
+    "\\EmployeeManagementAPI\\Services"
+  ],
+  "SelectedNode": "\\EmployeeManagementAPI\\Program.cs",
+  "PreviewInSolutionExplorer": false
+}

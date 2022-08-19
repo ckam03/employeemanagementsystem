@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .input-forms {
+      @apply p-2 rounded-lg border-2 border-gray-200 focus:border-indigo-500 focus:ring-indigo-500;
+    }
+  }
