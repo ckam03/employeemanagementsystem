@@ -6,4 +6,13 @@
     .input-forms {
       @apply p-2 rounded-lg border-2 border-gray-200 focus:border-indigo-500 focus:ring-indigo-500;
     }
+
+    .forms {
+      @apply h-[35rem] w-[40rem] bg-gray-50 z-50 shadow-lg rounded-lg absolute top-56 right-[40rem]
+    }
+
+    .submit-button {
+      @apply bg-indigo-300 text-indigo-800 p-2 rounded-lg font-medium
+    }
+
   }

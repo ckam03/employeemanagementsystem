@@ -1,34 +1,27 @@
 import { useEffect, useState } from "react"
 import { SubmitHandler, useForm } from "react-hook-form"
-import { getDepartments } from "../services/DepartmentService"
-import { createEmployee } from "../services/EmployeeService"
 
-interface IEmployeeForm {
-  departmentId: number
+interface Employee {
+  employeeId: string
   firstName: string
   lastName: string
   phoneNumber: string
+  departmentName: string
   salary: string
   email: string
 }
 
-interface Department {
-  departmentId: number
-  departmentName: string
-}
-
-const NewEmployeeForm = () => {
-  const [departments, setDepartments] = useState<Department[]>([])
-
-  const { handleSubmit, register } = useForm<IEmployeeForm>()
-  const onSubmit: SubmitHandler<IEmployeeForm> = (data) => createEmployee(data)
-
-  useEffect(() => {
-    getDepartments().then((data) => {
-      setDepartments(data)
-    })
-  }, [])
-
+const EditEmployee = ({
+  employeeId,
+  firstName,
+  lastName,
+  phoneNumber,
+  departmentName,
+  salary,
+  email,
+}: Employee) => {
+  const { handleSubmit, register } = useForm<Employee>()
+  const onSubmit: SubmitHandler<Employee> = (data) => console.log(data)
   return (
     <div className="forms">
       <form onSubmit={handleSubmit(onSubmit)}>
@@ -39,30 +32,35 @@ const NewEmployeeForm = () => {
           <input
             type="text"
             placeholder="First Name"
+            defaultValue={firstName}
             className="input-forms"
             {...register("firstName")}
           />
           <input
             type="text"
             placeholder="Last Name"
+            defaultValue={lastName}
             className="input-forms"
             {...register("lastName")}
           />
           <input
             type="text"
             placeholder="Phone Number"
+            defaultValue={phoneNumber}
             className="input-forms"
             {...register("phoneNumber")}
           />
           <input
             type="text"
             placeholder="Salary"
+            defaultValue={salary}
             className="input-forms"
             {...register("salary")}
           />
           <input
             type="text"
             placeholder="Email Address"
+            defaultValue={email}
             className="input-forms"
             {...register("email")}
           />
@@ -71,7 +69,7 @@ const NewEmployeeForm = () => {
             type="number"
             placeholder="Department Id"
             className="input-forms"
-            {...register("departmentId")}
+            // {...register("departmentId")}
           />
           <button className="submit-button">
             Submit
@@ -82,4 +80,4 @@ const NewEmployeeForm = () => {
   )
 }
 
-export default NewEmployeeForm
+export default EditEmployee

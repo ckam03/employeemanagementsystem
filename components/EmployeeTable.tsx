@@ -11,7 +11,7 @@ interface Employee {
   firstName: string
   lastName: string
   phoneNumber: string
-  department: string
+  departmentName: string
   salary: string
   email: string
 }
@@ -21,6 +21,8 @@ const EmployeeTable = () => {
 
   useEffect(() => {
     getEmployees().then((data) => {
+      console.log(data);
+      
       setEmployees(data)
     })
 
@@ -50,7 +52,7 @@ const EmployeeTable = () => {
             firstName={employee.firstName}
             lastName={employee.lastName}
             phoneNumber={employee.phoneNumber}
-            department={employee.department}
+            departmentName={employee.departmentName}
             salary={employee.salary}
             email={employee.email}
           />

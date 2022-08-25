@@ -8,5 +8,6 @@
         public string PhoneNumber { get; set; } = string.Empty;
         public string Salary { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
+        public string DepartmentName { get; set; } = string.Empty;
     }
 }

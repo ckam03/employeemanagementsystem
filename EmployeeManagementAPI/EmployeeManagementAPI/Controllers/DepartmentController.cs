@@ -69,6 +69,8 @@ namespace EmployeeManagementAPI.Controllers
                 return NotFound();
             }
 
+            _context.Departments.Update(department);
+            await _context.SaveChangesAsync();
             return NoContent();
         }
 

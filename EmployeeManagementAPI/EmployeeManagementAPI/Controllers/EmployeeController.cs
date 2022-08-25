@@ -20,6 +20,7 @@ namespace EmployeeManagementAPI.Controllers
         [HttpGet]
         public async Task<IEnumerable<EmployeeDto>> GetEmployees()
         {
+            
             var employees = await _context.Employees
                 .Select(e => new EmployeeDto()
                 {
@@ -29,6 +30,7 @@ namespace EmployeeManagementAPI.Controllers
                     PhoneNumber = e.PhoneNumber,
                     Salary = e.Salary,
                     Email = e.Email,
+                    DepartmentName = e.Department.DepartmentName
                 })
                 .ToListAsync();
 
@@ -44,6 +46,7 @@ namespace EmployeeManagementAPI.Controllers
             {
                 return NotFound();
             }
+            
 
             var employee = new Employee()
             {
@@ -56,17 +59,26 @@ namespace EmployeeManagementAPI.Controllers
                 Department = department
             };
 
-            await _context.Employees.AddAsync(employee);
+            _context.Employees.Add(employee);
             await _context.SaveChangesAsync();
 
-            return Ok(employee);
+            return Ok();
         }
 
-        //[HttpPut]
-        //public async Task UpdateEmployee()
-        //{
+        [HttpPut]
+        public async Task<ActionResult> UpdateEmployee([FromBody]EmployeeDto employeeDto)
+        {
+            var employee = await _context.Employees.FindAsync(employeeDto.EmployeeId);
+            if (employee is null)
+            {
+                return NotFound();
+            }
 
-        //}
+            _context.Employees.Update(employee);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
 
         //[HttpDelete]
         //public async Task DeleteEmployee()
