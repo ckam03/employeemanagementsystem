@@ -6,31 +6,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56d41298-12d8-4208-8429-51f5464738b9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.vs/EmployeeManagementAPI/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/EmployeeManagementAPI/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/EmployeeManagementAPI/v17/.futdcache.v1" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/EmployeeManagementAPI/v17/.futdcache.v1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/EmployeeManagementAPI/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/EmployeeManagementAPI/v17/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/slnx.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmployeeManagementAPI/Controllers/DepartmentController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeManagementAPI/Controllers/DepartmentController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmployeeManagementAPI/Controllers/EmployeeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeManagementAPI/Controllers/EmployeeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmployeeManagementAPI/Dtos/CreateEmployeeDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeManagementAPI/Dtos/CreateEmployeeDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmployeeManagementAPI/Dtos/EmployeeDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeManagementAPI/Dtos/EmployeeDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmployeeManagementAPI/Migrations/20220819141103_InitialCreate.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmployeeManagementAPI/Migrations/20220819141103_InitialCreate.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmployeeManagementAPI/bin/Debug/net6.0/EmployeeManagementAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeManagementAPI/bin/Debug/net6.0/EmployeeManagementAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmployeeManagementAPI/bin/Debug/net6.0/EmployeeManagementAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeManagementAPI/bin/Debug/net6.0/EmployeeManagementAPI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmployeeManagementAPI/obj/Debug/net6.0/EmployeeManagementAPI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeManagementAPI/obj/Debug/net6.0/EmployeeManagementAPI.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmployeeManagementAPI/obj/Debug/net6.0/EmployeeManagementAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeManagementAPI/obj/Debug/net6.0/EmployeeManagementAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmployeeManagementAPI/obj/Debug/net6.0/EmployeeManagementAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeManagementAPI/obj/Debug/net6.0/EmployeeManagementAPI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmployeeManagementAPI/obj/Debug/net6.0/ref/EmployeeManagementAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeManagementAPI/obj/Debug/net6.0/ref/EmployeeManagementAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmployeeManagementAPI/obj/Debug/net6.0/refint/EmployeeManagementAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeManagementAPI/obj/Debug/net6.0/refint/EmployeeManagementAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmployeeManagementAPI/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeManagementAPI/obj/staticwebassets.pack.sentinel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../components/EmployeeEntry.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../components/EmployeeEntry.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../components/EmployeeTable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../components/EmployeeTable.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../components/NewEmployeeForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../components/NewEmployeeForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../services/DepartmentService.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../services/DepartmentService.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../services/EmployeeService.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../services/EmployeeService.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/../styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EmployeeManagementAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EmployeeManagementAPI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmployeeManagementAPI/obj/Debug/net6.0/EmployeeManagementAPI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeManagementAPI/obj/Debug/net6.0/EmployeeManagementAPI.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmployeeManagementAPI/obj/Debug/net6.0/EmployeeManagementAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeManagementAPI/obj/Debug/net6.0/EmployeeManagementAPI.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmployeeManagementAPI/obj/EmployeeManagementAPI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeManagementAPI/obj/EmployeeManagementAPI.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmployeeManagementAPI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeManagementAPI/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmployeeManagementAPI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeManagementAPI/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmployeeManagementAPI/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeManagementAPI/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmployeeManagementAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeManagementAPI/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,15 +29,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.EmployeeManagementAPI">
     <configuration name="EmployeeManagementAPI" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/EmployeeManagementAPI/EmployeeManagementAPI.csproj" />
@@ -105,6 +88,7 @@
       <workItem from="1661209495387" duration="2000" />
       <workItem from="1661209958475" duration="1962000" />
       <workItem from="1661292242989" duration="1287000" />
+      <workItem from="1663118290662" duration="2067000" />
     </task>
     <servers />
   </component>

@@ -1,10 +1,7 @@
 using EmployeeManagementAPI.Data;
-using EmployeeManagementAPI.Dtos;
 using EmployeeManagementAPI.Interfaces;
-using EmployeeManagementAPI.Models;
 using EmployeeManagementAPI.Services;
 using Microsoft.EntityFrameworkCore;
-using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 var myAllowSpecificOrigins = "_myAllowSpecificOrigins";

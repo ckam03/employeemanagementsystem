@@ -3,81 +3,67 @@ using EmployeeManagementAPI.Dtos;
 using EmployeeManagementAPI.Interfaces;
 using EmployeeManagementAPI.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Text.Json;
-using System.Text.Json.Serialization;
 
-namespace EmployeeManagementAPI.Controllers
+namespace EmployeeManagementAPI.Controllers;
+
+[Route("Department")]
+[ApiController]
+public class DepartmentController : ControllerBase
 {
-    [Route("Department")]
-    [ApiController]
-    public class DepartmentController : ControllerBase
+    private readonly EmployeeDbContext _context;
+    private readonly IDepartmentService _departmentService;
+    
+    public DepartmentController(EmployeeDbContext context, IDepartmentService departmentService)
     {
-        private readonly EmployeeDbContext _context;
-        private readonly IDepartmentService _departmentService;
-        
-        public DepartmentController(EmployeeDbContext context, IDepartmentService departmentService)
-        {
-            _context = context;
-            _departmentService = departmentService;
-        }
-        // GET: api/<DepartmentController>
-        [HttpGet]
-        public async Task<IEnumerable<DepartmentDto>> Get()
-        {
-            var departments = await _departmentService.GetDepartments();
-            var departmentDto = departments
-                .Select(department => new DepartmentDto()
-            {
-                DepartmentId = department.DepartmentId,
-                DepartmentName = department.DepartmentName,
-                Employees = department.Employees.Select(employee => new EmployeeDto()
-                {
-                    EmployeeId = employee.EmployeeId,
-                    FirstName = employee.FirstName,
-                    LastName = employee.LastName,
-                    PhoneNumber = employee.PhoneNumber,
-                    Salary = employee.Salary,
-                    Email = employee.Email,
-                }).ToList()
-            });
-            return departmentDto;
-        }
+        _context = context;
+        _departmentService = departmentService;
+    }
 
-        // POST api/<DepartmentController>
-        [HttpPost]
-        public async Task CreateDepartment(CreateDepartmentDto departmentDto)
+    // GET: api/<DepartmentController>
+    [HttpGet]
+    public async Task<IEnumerable<DepartmentDto>> Get()
+    {
+        var departments = await _departmentService.GetDepartments();
+        var departmentDto = departments.Select(department => new DepartmentDto()
         {
-            var department = new Department()
-            {
-                DepartmentId = departmentDto.DepartmentId,
-                DepartmentName = departmentDto.DepartmentName,
-            };
-            await _context.Departments.AddAsync(department);
-            await _context.SaveChangesAsync();
+            DepartmentId = department.DepartmentId,
+            DepartmentName = department.DepartmentName
+        }).ToList();
+
+        return departmentDto;
+    }
+
+    // POST api/<DepartmentController>
+    [HttpPost]
+    public async Task<ActionResult> CreateDepartment(CreateDepartmentDto departmentDto)
+    {
+        var department = new Department()
+        {
+            DepartmentName = departmentDto.DepartmentName,
+        };
+
+        await _departmentService.CreateAsync(department);
+        return Ok(department);
+    }
+
+    // PUT api/<DepartmentController>/5
+    [HttpPut("{id}")]
+    public async Task<ActionResult> UpdateDepartment(DepartmentDto departmentDto)
+    {
+        var department = await _departmentService.GetByIdAsync(departmentDto.DepartmentId);
+        if (department is null)
+        {
+            return NotFound();
         }
 
-        // PUT api/<DepartmentController>/5
-        [HttpPut("{id}")]
-        public async Task<ActionResult> UpdateDepartment(DepartmentDto updateDepartment)
-        {
-            var department = await _context.Departments.FindAsync(updateDepartment.DepartmentId);
+        await _departmentService.UpdateAsync(department);
+        return NoContent();
+    }
 
-            if (department is null)
-            {
-                return NotFound();
-            }
-
-            _context.Departments.Update(department);
-            await _context.SaveChangesAsync();
-            return NoContent();
-        }
-
-        // DELETE api/<DepartmentController>/5
-        [HttpDelete("{id}")]
-        public async Task Delete(int id)
-        {
-        }
+    // DELETE api/<DepartmentController>/5
+    [HttpDelete("{id}")]
+    public async Task Delete(DepartmentDto departmentDto)
+    {
+        var department = await _context.Departments.FindAsync(departmentDto.DepartmentId);
     }
 }
